@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  background-color: #ededed;
+}
+
+.main {
+  margin: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.settings-container {
+  padding: 30px;
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.grid-container {
+  max-width: 800px;
+  width: 80%;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.square {
+  width: 100%;
+  aspect-ratio: 1;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.settings-container-size,
+.settings-container-color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.settings-container-size__value,
+.settings-container-color__header {
+  margin: 0;
+  font-size: 18px;
+}
+
+#btn {
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#btn.active {
+  background-color: #333;
+  color: #ededed;
+}
+
+#btn:hover {
+  transform: scale(1.05);
+}
+
+.color-picker {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-width: 0;
+  box-shadow: none;
+}
